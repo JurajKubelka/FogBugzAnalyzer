@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "FogBugzAnalyzer",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fogbugz"
+	],
+	"name" : "FBAClient",
+	"type" : "normal"
+}
