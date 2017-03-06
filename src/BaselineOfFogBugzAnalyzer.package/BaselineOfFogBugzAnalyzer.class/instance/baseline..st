@@ -7,8 +7,10 @@ baseline: spec
 				spec
 					repository: 'github://JurajKubelka/FogBugz/src';
 					loads: 'default' ];
-			package: #'FogBugz-Client' with: [ spec requires: #( #'FogBugzAPI' ) ];
-			package: #'FogBugz-Tests' with: [ spec requires: #( #'FogBugz-Client' #'FogBugzAPI' ) ];
-			group: 'client' with: #( #'FogBugz-Client' );
-			group: 'tests' with: #( #'FogBugz-Tests' );
-			group: 'default' with: #( client tests ) ]
+			configuration: 'Roassal2' with: [ 
+				spec 
+					repository: 'http://www.smalltalkhub.com/mc/ObjectProfile/Roassal2/main';
+					versionString: #stable ];
+			package: #'FogBugzAnalyzer' with: [ spec requires: #( #'FogBugz' #'Roassal2' ) ];
+			group: 'analyzer' with: #( #'FogBugzAnalyzer' );
+			group: 'default' with: #( analyzer ) ]
