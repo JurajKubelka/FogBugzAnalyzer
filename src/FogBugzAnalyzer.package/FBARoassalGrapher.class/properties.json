@@ -9,8 +9,11 @@
 		"client",
 		"dateAndEvents",
 		"minDate",
-		"builder"
+		"builder",
+		"sprints",
+		"releases",
+		"conferences"
 	],
-	"name" : "FBARoassal",
+	"name" : "FBARoassalGrapher",
 	"type" : "normal"
 }
