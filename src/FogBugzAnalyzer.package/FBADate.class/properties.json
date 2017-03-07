@@ -6,11 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"client",
-		"dateAndEvents",
-		"minDate",
-		"builder"
+		"date",
+		"info"
 	],
-	"name" : "FBARoassal",
+	"name" : "FBADate",
 	"type" : "normal"
 }
