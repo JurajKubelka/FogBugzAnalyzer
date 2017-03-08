@@ -1,0 +1,3 @@
+configuration
+releaseColor
+	^ Color red

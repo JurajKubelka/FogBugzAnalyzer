@@ -12,7 +12,8 @@
 		"builder",
 		"sprints",
 		"releases",
-		"conferences"
+		"conferences",
+		"timelineDataBlock"
 	],
 	"name" : "FBARoassalGrapher",
 	"type" : "normal"

@@ -1,0 +1,3 @@
+configuration
+sprintColor
+	^ Color green

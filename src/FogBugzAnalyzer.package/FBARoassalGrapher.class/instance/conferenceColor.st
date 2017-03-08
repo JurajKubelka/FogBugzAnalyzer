@@ -1,0 +1,3 @@
+configuration
+conferenceColor
+	^ Color black
