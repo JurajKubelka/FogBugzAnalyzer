@@ -1,5 +1,5 @@
 public - views
-timelineEventsPerDate
+timelineEventsPerDay
 	| data |
 	self addImportantDates.
 	self addImportantDatesOnAxisX.

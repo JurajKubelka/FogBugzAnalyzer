@@ -13,7 +13,8 @@
 		"sprints",
 		"releases",
 		"conferences",
-		"timelineDataBlock"
+		"timelineDataBlock",
+		"onDemand"
 	],
 	"name" : "FBARoassalGrapher",
 	"type" : "normal"

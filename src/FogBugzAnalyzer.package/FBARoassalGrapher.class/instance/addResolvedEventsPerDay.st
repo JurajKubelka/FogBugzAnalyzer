@@ -2,5 +2,5 @@ adding - datasets - events
 addResolvedEventsPerDay
 	^ self 
 		addDataSetForEventNamed: 'Resolved' 
-		recognizedBy: [ :event | event isResolved and: [ event isResolvedFixReviewNeeded not ] ]
+		recognizedBy: [ :event | event isResolvedNotFixReviewNeeded ]
 		color: self colors fifth

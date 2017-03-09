@@ -1,5 +1,5 @@
 public - views
-timelineEventActionsPerDate
+timelineActiveDevelopesPerDay
 	| data points |
 	self addImportantDates.
 	self addImportantDatesOnAxisX.
@@ -8,12 +8,12 @@ timelineEventActionsPerDate
 		collect: [ :assoc | | dictionary |
 			dictionary := Dictionary new.
 			assoc value do: [ :event | dictionary 
-				at: event actionName asSymbol
+				at: event user 
 				ifPresent: [ :col | col add: event ] ifAbsentPut: [ OrderedCollection with: event ] ].
 			assoc key -> dictionary ].
 	data points: (points sorted: [ :a :b | a key < b key ]).
 	data y: [ :assoc | assoc value size ].
-	data label: 'Event actions  per day'.
+	data label: 'Active developers per day'.
 	builder add: data.
-	self configureAxisXAndY: 'Number of actions'.
+	self configureAxisXAndY: 'Number of developers'.
 	^ self build

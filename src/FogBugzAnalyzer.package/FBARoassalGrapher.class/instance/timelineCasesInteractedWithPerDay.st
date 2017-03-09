@@ -1,5 +1,5 @@
 public - views
-timelineCasesInteractedWithPerDate
+timelineCasesInteractedWithPerDay
 	| data points |
 	self addImportantDates.
 	self addImportantDatesOnAxisX.

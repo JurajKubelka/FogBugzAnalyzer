@@ -1,3 +1,3 @@
 accessing
 cases
-	^ self client ifNotNil: #realCases ifNil: #()
+	^ self client ifNotNil: #cases ifNil: #()
