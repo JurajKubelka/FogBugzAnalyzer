@@ -1,8 +1,8 @@
 adding
 addImportantDates
-	sprints := FBADateFactory dates select: #isSprint.
+	sprints := FBAFactory events select: #isSprint.
 	self addDecoratorWithDates: sprints color: self sprintColor.
-	releases := FBADateFactory dates select: #isRelease.
+	releases := FBAFactory events select: #isRelease.
 	self addDecoratorWithDates: releases color: self releaseColor.
-	conferences := FBADateFactory dates select: #isConference.
+	conferences := FBAFactory events select: #isConference.
 	self addDecoratorWithDates: conferences color: self conferenceColor
