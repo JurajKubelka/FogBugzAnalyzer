@@ -1,10 +1,10 @@
 gt-inspector-extension
 gtInspectorEventsIn: composite 
-	<gtInspectorPresentationOrder: 2>
+	<gtInspectorPresentationOrder: -1>
 	^ composite fastTable 
 		title: [ 'Events' translated ];
-		display: [ self events ];
-		when: [ self events notNil ];
+		display: [ self ];
+		when: [ self notEmpty ];
 		column: 'Date' 
 			evaluated: [ :anEvent | anEvent date asStringLocalYMDHMFogBugz ] 
 			width: 100
