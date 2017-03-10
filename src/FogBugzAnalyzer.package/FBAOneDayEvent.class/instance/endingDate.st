@@ -1,0 +1,3 @@
+accessing
+endingDate
+	^ self date

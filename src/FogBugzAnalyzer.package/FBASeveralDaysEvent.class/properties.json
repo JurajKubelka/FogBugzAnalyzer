@@ -6,9 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"date",
+		"startDate",
+		"endDate",
 		"info"
 	],
-	"name" : "FBAEvent",
+	"name" : "FBASeveralDaysEvent",
 	"type" : "normal"
 }

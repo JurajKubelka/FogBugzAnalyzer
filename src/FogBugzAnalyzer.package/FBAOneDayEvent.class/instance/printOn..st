@@ -1,8 +1,6 @@
 printing
 printOn: aStream
-	self date 
-		ifNotNil: [ :aDateAndTime | aDateAndTime printYMDOn: aStream ]
-		ifNil: [ aStream nextPutAll: '<missing date>' ].
+	self printDateOn: aStream.
 	self info
 		ifNotNil: [ :aString | 
 			aString ifNotEmpty: [ 

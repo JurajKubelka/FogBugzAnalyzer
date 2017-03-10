@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "FogBugzAnalyzer",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"startingEvent",
+		"endingEvent"
+	],
+	"name" : "FBABetweenTwoEvents",
+	"type" : "normal"
+}

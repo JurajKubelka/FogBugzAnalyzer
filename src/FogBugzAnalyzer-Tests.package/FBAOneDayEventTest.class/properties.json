@@ -8,6 +8,6 @@
 	"instvars" : [
 		"event"
 	],
-	"name" : "FBAEventTest",
+	"name" : "FBAOneDayEventTest",
 	"type" : "normal"
 }
