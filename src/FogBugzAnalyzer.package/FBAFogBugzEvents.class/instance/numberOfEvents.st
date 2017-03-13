@@ -1,0 +1,3 @@
+convenience
+numberOfEvents
+	^ self size

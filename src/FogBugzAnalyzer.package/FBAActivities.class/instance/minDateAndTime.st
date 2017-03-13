@@ -1,3 +1,3 @@
 accessing - computed
 minDateAndTime
-	^ self first startDate
+	^ self first startDate asDate asDateAndTime

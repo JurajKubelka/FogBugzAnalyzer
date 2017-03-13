@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "FBARoassalGrapher",
+	"category" : "FogBugzAnalyzer-Roassal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"client",
+		"dateAndEvents"
+	],
+	"name" : "FBARoassalClient",
+	"type" : "normal"
+}

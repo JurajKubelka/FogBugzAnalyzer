@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "FogBugzAnalyzer-Roassal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"builder",
+		"onDemand",
+		"timelineDataBlock",
+		"minDate",
+		"sprints",
+		"releases",
+		"conferences",
+		"popupTextBlock"
+	],
+	"name" : "FBARoassalGrapher",
+	"type" : "normal"
+}

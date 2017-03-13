@@ -1,0 +1,3 @@
+convenience
+numberOfOtherResolvedEvents
+	^ self otherResolvedEvents size

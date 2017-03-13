@@ -1,0 +1,3 @@
+initialization
+setPopupTextBlockForConnectedGraph
+	self subclassResponsibility

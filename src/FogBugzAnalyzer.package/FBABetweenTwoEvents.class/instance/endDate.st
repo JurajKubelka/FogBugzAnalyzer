@@ -1,3 +1,3 @@
 accessing - computed
 endDate
-	^ self endingEvent date - 1 day
+	^ self endingEvent startDate - 1 day

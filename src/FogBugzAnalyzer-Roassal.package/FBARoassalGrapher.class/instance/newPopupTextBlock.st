@@ -1,0 +1,3 @@
+initialization
+newPopupTextBlock
+	^ self subclassResponsibility

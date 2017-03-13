@@ -1,3 +1,3 @@
 accessing - computed
 startDate
-	^ self startingEvent date + 1 day
+	^ self startingEvent endDate + 1 day

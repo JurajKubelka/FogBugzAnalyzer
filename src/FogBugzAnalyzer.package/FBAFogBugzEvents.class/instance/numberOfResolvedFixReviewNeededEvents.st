@@ -1,0 +1,3 @@
+convenience
+numberOfResolvedFixReviewNeededEvents
+	^ self resolvedFixReviewNeededEvents size
