@@ -3,7 +3,7 @@ printOverviewOn: aStream
 	| all |
 	aStream 
 		print: self developers size;
-		nextPutAll: ' developers were involved the following ';
+		nextPutAll: ' developers were involved in the following ';
 		print: (all := self events size);
 		nextPutAll: ' activities:';
 		cr.

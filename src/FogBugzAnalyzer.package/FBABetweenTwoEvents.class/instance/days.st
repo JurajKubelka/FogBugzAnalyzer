@@ -1,3 +1,3 @@
 accessing - computed
 days
-	^ ((self endingDate translateToUTC asDate - self startingDate translateToUTC asDate) days) + 1
+	^ ((self endDate translateToUTC asDate - self startDate translateToUTC asDate) days) + 1

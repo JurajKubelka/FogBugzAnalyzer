@@ -7,7 +7,7 @@ gtInspectorActivitiesIn: composite
 		display: [ self asOrderedCollection ];
 		beMultiple;	
 		column: 'Date' 
-			evaluated: [ :event | event date asDate yyyymmdd ]  
+			evaluated: [ :event | self highlight: event date asDate yyyymmdd ofEvent: event ]  
 			width: 80 tags: { } 
 			sortedBy: [ :a :b | a date < b date ];
 		column: 'Events' 

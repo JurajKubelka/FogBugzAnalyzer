@@ -1,0 +1,3 @@
+accessing
+endDate
+	^ self subclassResponsibility

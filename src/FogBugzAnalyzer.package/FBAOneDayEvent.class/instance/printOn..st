@@ -1,4 +1,4 @@
 printing
 printOn: aStream
-	self printDateOn: aStream.
+	self printDate: self date on: aStream.
 	self printInfoOn: aStream.

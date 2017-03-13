@@ -1,3 +1,3 @@
 accessing
-startingDate
+startDate
 	^ self date

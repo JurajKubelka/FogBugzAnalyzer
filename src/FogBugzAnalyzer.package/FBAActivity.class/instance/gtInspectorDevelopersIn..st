@@ -10,12 +10,12 @@ gtInspectorDevelopersIn: composite
 			evaluated: [ :assoc | assoc value size ]
 			width: 50
 			tags: { }
-			sortedBy: [ :a :b | a value size < b value size ];
+			sortedBy: [ :a :b | a value size > b value size ];
 		column: 'Cases' 
 			evaluated: [ :assoc | assoc value numberOfCases ]
 			width: 50
 			tags: { }
-			sortedBy: [ :a :b | a value numberOfCases < b value numberOfCases ];
+			sortedBy: [ :a :b | a value numberOfCases > b value numberOfCases ];
 		send: [ :selection | 
 			selection isNil 
 				ifTrue: [ nil ]
