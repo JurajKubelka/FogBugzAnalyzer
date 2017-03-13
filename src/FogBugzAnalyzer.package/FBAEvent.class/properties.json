@@ -6,9 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"startingEvent",
-		"endingEvent"
+		"info"
 	],
-	"name" : "FBABetweenTwoEvents",
+	"name" : "FBAEvent",
 	"type" : "normal"
 }

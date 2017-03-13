@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "TestCase",
+	"category" : "FogBugzAnalyzer-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"oneDayEvent1",
+		"oneDayEvent2",
+		"event"
+	],
+	"name" : "FBABetweenTwoEventsTest",
+	"type" : "normal"
+}

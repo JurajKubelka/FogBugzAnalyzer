@@ -1,0 +1,3 @@
+tests
+testStringDatesAndInfo
+	self assert: FBAFactory stringDatesAndInfo isArray

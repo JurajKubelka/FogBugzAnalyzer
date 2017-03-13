@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "FBAEvent",
 	"category" : "FogBugzAnalyzer",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"startDate",
-		"endDate",
-		"info"
+		"endDate"
 	],
 	"name" : "FBASeveralDaysEvent",
 	"type" : "normal"

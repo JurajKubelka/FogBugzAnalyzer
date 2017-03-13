@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "FBAAbstractEvent",
+	"super" : "Object",
 	"category" : "FogBugzAnalyzer",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"startingEvent",
-		"endingEvent"
-	],
-	"name" : "FBABetweenTwoEvents",
+	"instvars" : [ ],
+	"name" : "FBAAbstractEvent",
 	"type" : "normal"
 }
