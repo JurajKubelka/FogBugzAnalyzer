@@ -1,3 +1,0 @@
-configuration
-connectColor
-	^ Color blue
