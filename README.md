@@ -1,6 +1,18 @@
 # FogBugzAnalyzer
+
 FogBugz activity analysis support for Pharo http://fogbugz.com http://pharo.org
 
+
+## Installation
+
+```
+Metacello new
+	baseline: #FogBugzAnalyzer;
+	repository: 'github://JurajKubelka/FogBugzAnalyzer/src';
+	load.
+```
+
+## Usage
 
 ```
 client := FBAClient new.

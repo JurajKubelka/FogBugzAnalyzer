@@ -1,6 +1,6 @@
 gt-inspector-extension
 gtInspectorEventActionsIn: composite
-	<gtInspectorPresentationOrder: 1>
+	<gtInspectorPresentationOrder: 3>
 	^ composite fastTable
 			title: [ 'Event Actions' ];
 			display: [ self eventsPerActionName associations ];

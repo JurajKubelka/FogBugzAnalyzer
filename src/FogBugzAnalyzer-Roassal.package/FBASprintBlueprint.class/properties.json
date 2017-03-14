@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "FogBugzAnalyzer-Roassal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"activities",
+		"view",
+		"mondrian"
+	],
+	"name" : "FBASprintBlueprint",
+	"type" : "normal"
+}

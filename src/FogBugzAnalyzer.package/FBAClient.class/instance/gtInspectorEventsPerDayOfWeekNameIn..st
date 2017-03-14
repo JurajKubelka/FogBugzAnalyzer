@@ -1,6 +1,6 @@
 gt-inspector-extension
 gtInspectorEventsPerDayOfWeekNameIn: composite
-	<gtInspectorPresentationOrder: 2>
+	<gtInspectorPresentationOrder: 5>
 	^ composite fastTable
 			title: [ 'Events Per Day Of Week' ];
 			display: [ self eventsPerDayOfWeekName associations ];
