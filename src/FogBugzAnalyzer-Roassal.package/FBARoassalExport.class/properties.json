@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "FogBugzAnalyzer-Roassal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"location",
+		"client",
+		"activities"
+	],
+	"name" : "FBARoassalExport",
+	"type" : "normal"
+}
