@@ -1,3 +1,3 @@
 accessing
 developers
-	^ (self collect: #user as: Set) asOrderedCollection sorted: [ :a :b | a username < b username ]
+	^ ((self collect: #user as: Set) as: FBADevelopers) sorted: [ :a :b | a username < b username ]

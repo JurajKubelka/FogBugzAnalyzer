@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "FBAOrderedCollection",
+	"super" : "OrderedCollection",
 	"category" : "FogBugzAnalyzer",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "FBAFogBugzEvents",
+	"instvars" : [
+		"title"
+	],
+	"name" : "FBAOrderedCollection",
 	"type" : "normal"
 }

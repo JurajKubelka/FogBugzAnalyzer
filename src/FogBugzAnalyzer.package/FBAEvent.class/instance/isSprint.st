@@ -1,3 +1,3 @@
 testing
 isSprint
-	^ (self isConference or: [ self isRelease ]) not
+	^ self name includesSubstring: 'sprint' caseSensitive: false

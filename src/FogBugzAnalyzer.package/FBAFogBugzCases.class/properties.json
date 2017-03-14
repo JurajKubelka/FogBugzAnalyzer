@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "OrderedCollection",
+	"super" : "FBAOrderedCollection",
 	"category" : "FogBugzAnalyzer",
 	"classinstvars" : [ ],
 	"pools" : [ ],

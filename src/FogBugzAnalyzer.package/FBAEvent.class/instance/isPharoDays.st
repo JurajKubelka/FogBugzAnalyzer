@@ -1,3 +1,3 @@
 testing
 isPharoDays
-	^ self info includesSubstring: 'Pharo Days' caseSensitive: false 
+	^ self name includesSubstring: 'Pharo Days' caseSensitive: false 

@@ -1,3 +1,3 @@
 accessing
 developers
-	^ self collect: #user
+	^ self collect: #user as: FBADevelopers
