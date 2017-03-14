@@ -1,3 +1,3 @@
 accessing - computed
 minDateAndTime
-	^ (self allCases detectMin: [ :case | case dateOpened ]) dateOpened asDate asDateAndTime
+	^ (self cases detectMin: [ :case | case dateOpened ]) dateOpened asDate asDateAndTime

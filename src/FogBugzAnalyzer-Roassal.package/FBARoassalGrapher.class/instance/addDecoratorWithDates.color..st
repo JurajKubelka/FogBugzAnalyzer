@@ -1,5 +1,5 @@
 adding
-addDecoratorWithDates: dates color: aColor
+addDecoratorWithDates: events color: aColor
 	^ self 
-		addDecoratorWithValues: (dates collect: [ :date | (date date - self minDate) days ])
+		addDecoratorWithValues: (events collect: [ :event | (event midDate - self minDate) days ])
 	 	color: aColor

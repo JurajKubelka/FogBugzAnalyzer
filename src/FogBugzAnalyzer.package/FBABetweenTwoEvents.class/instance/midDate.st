@@ -1,3 +1,3 @@
 accessing
-date
+midDate
 	^ self startDate + ((self endDate - self startDate) / 2)

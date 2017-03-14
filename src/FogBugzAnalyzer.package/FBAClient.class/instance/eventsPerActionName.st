@@ -2,7 +2,7 @@ accessing - computed
 eventsPerActionName
 	| dictionary |
 	dictionary := Dictionary new.
-	self eventsDo: [ :event |
+	self userEventsOfRealCasesDo: [ :event |
 			dictionary 
 				at: event actionName 
 				ifPresent: [ :collection | collection add: event ]

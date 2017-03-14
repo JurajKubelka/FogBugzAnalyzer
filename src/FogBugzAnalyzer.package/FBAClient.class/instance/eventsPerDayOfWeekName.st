@@ -2,7 +2,7 @@ accessing - computed
 eventsPerDayOfWeekName
 	^ self cacheAt: #eventsPerDayOfWeekName ifAbsentPut: [ | dateAndEvents |
 		dateAndEvents := Dictionary new.
-		self eventsDo: [ :event | | key |
+		self userEventsOfRealCasesDo: [ :event | | key |
 			key := event date dayOfWeekName.
 			dateAndEvents 
 				at: key

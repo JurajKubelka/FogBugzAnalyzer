@@ -1,3 +1,3 @@
 accessing - computed
 maxDateAndTime
-	^ (self allCases detectMax: [ :case | case lastModification ]) lastModification asDate asDateAndTime
+	^ (self cases detectMax: [ :case | case lastModification ]) lastModification asDate asDateAndTime
