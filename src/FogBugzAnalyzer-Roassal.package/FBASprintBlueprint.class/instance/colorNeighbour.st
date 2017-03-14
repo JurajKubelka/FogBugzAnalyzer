@@ -1,0 +1,3 @@
+colors
+colorNeighbour
+	^ Color red
