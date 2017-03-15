@@ -8,7 +8,7 @@ buildDevelopers: aCollection title: titleString label: labelString
 			mondrian node: labelString.
 			mondrian shape box color: Color black.
 			mondrian interaction 
-				highlightNeighbour: [ :developer | self 
+				highlightNeighbors: [ :developer | self 
 					highlightElementsRelatedWithDeveloper: developer ] 
 				color: self neighbourColor.
 			mondrian interaction showEdge connectTo: [ :event | self highlightElementsRelatedWithDeveloper: event ].

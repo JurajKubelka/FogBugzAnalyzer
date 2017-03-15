@@ -8,7 +8,7 @@ buildEvents: aCollection title: titleString label: labelString
 			mondrian node: labelString. 
 			mondrian shape box color: Color black.
 			mondrian interaction 
-				highlightNeighbour: [ :event | self highlightElementsRelatedWithEvent: event ] 
+				highlightNeighbors: [ :event | self highlightElementsRelatedWithEvent: event ] 
 				color: self neighbourColor.
 			mondrian interaction showEdge connectTo: [ :event | self highlightElementsRelatedWithEvent: event ].
 			mondrian nodes: aCollection.
