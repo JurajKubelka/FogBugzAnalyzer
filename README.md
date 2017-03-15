@@ -193,9 +193,7 @@ Introduction cases are created whenever a user sign-ups to the issue tracker.
 ![intro-cases-per-activity.png](assets/img/intro-cases-per-activity.png)
 
 ```
-activitiesWithAllEvents := client activitiesWithAllEvents.
-
-(FBARoassalActivities activities: activitiesWithAllEvents)
+(FBARoassalActivities activities: client activitiesWithAllEvents)
 	beStatic;
 	addImportantDates;
 	addImportantDatesOnAxisX;
@@ -211,7 +209,7 @@ activitiesWithAllEvents := client activitiesWithAllEvents.
 ![intro-cases-per-activity-mean.png](assets/img/intro-cases-per-activity-mean.png)
 
 ```
-(FBARoassalActivities activities: activitiesWithAllEvents)
+(FBARoassalActivities activities: client activitiesWithAllEvents)
 	beStatic;
 	addImportantDates;
 	addImportantDatesOnAxisX;
@@ -220,5 +218,14 @@ activitiesWithAllEvents := client activitiesWithAllEvents.
 	configureAxisXAndY: 'Number of Introduction Cases During Activity';
 	addLegend;
 	build.
+```
+
+## Blueprint
+
+![sprint-release-blueprint.png](assets/img/sprint-release-blueprint.png)
+
+```
+(FBASprintBlueprint activities: client activitiesWithUserEventsOfRealCases)
+	buildSuch: [ :activity | activity isSprint or: [ activity isRelease ] ].
 ```
 
