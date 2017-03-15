@@ -1,3 +1,3 @@
 adding - datasets
 addDeveloperEventsPerActivityWithoutTimeline
-	^ self addDeveloperEventsPerActivity
+	^ self addDeveloperEventsBoxPlot

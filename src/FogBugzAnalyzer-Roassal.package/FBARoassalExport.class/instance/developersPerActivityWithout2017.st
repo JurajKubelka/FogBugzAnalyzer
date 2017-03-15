@@ -1,7 +1,7 @@
 graphs
 developersPerActivityWithout2017
 	<graphOrder: 1 filename: 'developers-per-activity-without-2017.png'>
-	^ (FBARoassalActivities activities: (self activities 
+	^ (FBARoassalActivities activities: (self activitiesWithUserEventsOfRealCases 
 			reject: [ :activity | 
 				(activity includesDate: '2017-01-27' asDateAndTime) or: [ 
 					activity includesDate: '2017-03-03' asDateAndTime ] ]))

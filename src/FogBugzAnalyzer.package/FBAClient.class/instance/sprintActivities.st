@@ -1,4 +1,4 @@
-accessing - computed
+accessing - activities
 sprintActivities
 	| activities |
 	activities := FBAActivities withEvents: FBAEvents sprints.

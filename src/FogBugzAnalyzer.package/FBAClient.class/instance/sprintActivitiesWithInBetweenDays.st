@@ -1,4 +1,4 @@
-accessing - computed
+accessing - activities
 sprintActivitiesWithInBetweenDays
 	| activities events |
 	events := FBAEvents sprints withOtherdays.

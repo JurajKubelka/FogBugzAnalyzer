@@ -1,0 +1,3 @@
+accessing
+activitiesWithUserEventsOfRealCases
+	^ activitiesWithUserEventsOfRealCases ifNil: [ activitiesWithUserEventsOfRealCases := self client activitiesWithUserEventsOfRealCases ]

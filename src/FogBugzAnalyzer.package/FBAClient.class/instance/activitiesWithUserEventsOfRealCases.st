@@ -1,5 +1,5 @@
-accessing - computed
-eventActivitiesWithInBetweenDays
+accessing - activities
+activitiesWithUserEventsOfRealCases
 	| activities events |
 	events := FBAEvents events withOtherdays.
 	events withStart: self minDateAndTime end: self maxDateAndTime.

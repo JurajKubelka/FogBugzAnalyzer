@@ -1,5 +1,5 @@
 adding - datasets
 addDeveloperEventsPerActivityWithTimeline
-	^ self addDeveloperEventsPerActivity do: [ :dataSet |
+	^ self addDeveloperEventsBoxPlot do: [ :dataSet |
 		dataSet x: [ :anActivity | (anActivity midDate - self minDate) days ].
 	].

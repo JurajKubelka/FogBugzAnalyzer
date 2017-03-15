@@ -1,7 +1,7 @@
 graphs
 developersPerActivity
 	<graphOrder: 1 filename: 'developers-per-activity.png'>
-	^ (FBARoassalActivities activities: activities)
+	^ (FBARoassalActivities activities: self activitiesWithUserEventsOfRealCases)
 			beStatic;
 			addImportantDates;
 			addImportantDatesOnAxisX;

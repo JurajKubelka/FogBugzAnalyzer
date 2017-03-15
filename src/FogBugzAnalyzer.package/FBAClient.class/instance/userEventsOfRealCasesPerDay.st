@@ -1,5 +1,5 @@
 accessing - computed
-eventsPerDay
+userEventsOfRealCasesPerDay
 	| dateAndEvents |
 	dateAndEvents := Dictionary new.
 	self userEventsOfRealCasesDo: [ :event | | key |

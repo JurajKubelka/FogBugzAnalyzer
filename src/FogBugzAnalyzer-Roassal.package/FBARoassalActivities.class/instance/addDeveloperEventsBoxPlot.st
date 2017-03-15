@@ -1,5 +1,5 @@
 adding - datasets
-addDeveloperEventsPerActivity
+addDeveloperEventsBoxPlot
 	^ activities collect: [ :activity | | data developers events |
 		data := self newBoxPlotDataSet.
 		developers := activity developers.
