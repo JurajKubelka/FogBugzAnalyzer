@@ -5,41 +5,14 @@ buildDevelopersOn: anFBAActivity
 	developers := anFBAActivity developers.
 	developers ifEmpty: [ ^ self ].
 	mondrian node: developers forIt: [ 
-		mondrian shape box color: Color transparent; borderColor: Color black.
 		regularDevelopers := self activities 
 				regularDevelopers: developers for: anFBAActivity.
-		regularDevelopers title: 'regular developers'.
-		regularDevelopers ifNotEmpty: [ 
-			mondrian node: regularDevelopers forIt: [ 
-				mondrian shape label.
-				mondrian node: 'Regular'.
-				mondrian shape box color: Color black.
-				mondrian nodes: regularDevelopers.
-				mondrian layout grid.
-		] ].
-		mondrian shape box color: Color transparent; borderColor: Color black.
+		self buildDevelopers: regularDevelopers title: 'regular developers' label: 'Regular'.
 		occasionalDevelopers := self activities 
 				occassionalDevelopers: developers for: anFBAActivity.
-		occasionalDevelopers title: 'occasional developers'.
-		occasionalDevelopers ifNotEmpty: [ 
-			mondrian node: occasionalDevelopers forIt: [ 
-				mondrian shape label.
-				mondrian node: 'Occasional'.
-				mondrian shape box color: Color black.
-				mondrian nodes: occasionalDevelopers.
-				mondrian layout grid.
-		] ].
-		mondrian shape box color: Color transparent; borderColor: Color black.
+		self buildDevelopers: occasionalDevelopers title: 'occasional developers' label: 'Occasional'.
 		newcommers := anFBAActivity newcommers.
-		newcommers title: 'newcommers'.
-		newcommers ifNotEmpty: [ 
-			mondrian node: newcommers forIt: [ 
-				mondrian shape label.
-				mondrian node: 'Newcommers'.
-				mondrian shape box color: Color black.
-				mondrian nodes: newcommers.
-				mondrian layout grid.
-		] ].
+		self buildDevelopers: newcommers title: 'newcommers' label: 'Newcommers'.
 		mondrian layout verticalLine.
 	].
 	^ view
