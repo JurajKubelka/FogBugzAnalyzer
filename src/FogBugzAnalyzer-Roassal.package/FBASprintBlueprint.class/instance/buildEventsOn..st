@@ -1,11 +1,11 @@
 building
 buildEventsOn: anFBAActivity
 	| allEvents |
-	mondrian shape box color: Color transparent; borderColor: Color black.
+	mondrian shape box color: Color transparent; borderColor: self borderColor.
 	allEvents := anFBAActivity events.
 	allEvents ifEmpty: [ ^ self ].
 	self buildCases: allEvents cases title: 'cases' label: 'cases'.
-	mondrian shape box color: Color transparent; borderColor: Color black.
+	mondrian shape box color: Color transparent; borderColor: self borderColor.
 	mondrian node: allEvents forIt: [ 
 		self buildEvents: anFBAActivity openedEvents title: 'opening events' label: 'open'.
 		self buildEvents: anFBAActivity editedEvents title: 'edited events' label: 'edited'.

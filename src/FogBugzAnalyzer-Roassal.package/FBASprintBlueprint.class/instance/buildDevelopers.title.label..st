@@ -1,6 +1,6 @@
 building
 buildDevelopers: aCollection title: titleString label: labelString
-	mondrian shape box color: Color transparent; borderColor: Color black.
+	mondrian shape box color: Color transparent; borderColor: self borderColor.
 	aCollection title: titleString.
 	aCollection ifNotEmpty: [ 
 		mondrian node: aCollection forIt: [ 

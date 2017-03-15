@@ -2,7 +2,7 @@ building
 buildOn: anFBAActivity
 	mondrian shape box 
 		color: Color transparent;
-		borderColor: Color black;
+		borderColor: self borderColor;
 		if: [ anFBAActivity isSprint ] borderColor: Color green;
 		if: [ anFBAActivity isRelease ] borderColor: Color red;
 		if: [ anFBAActivity isConference ] borderColor: Color yellow.

@@ -1,7 +1,7 @@
 building
 buildCases: aCollection title: titleString label: labelString 
 	aCollection title: titleString.
-	mondrian shape box color: Color transparent; borderColor: Color black.
+	mondrian shape box color: Color transparent; borderColor: self borderColor.
 	aCollection ifNotEmpty: [ 
 		mondrian node: aCollection forIt: [ 
 			mondrian shape label.
@@ -9,7 +9,7 @@ buildCases: aCollection title: titleString label: labelString
 			mondrian shape box color: Color black.
 			mondrian interaction 
 				highlightElements: [ :case | self highlightElementsRelatedWithCase: case ] 
-				color: self colorNeighbour.
+				color: self neighbourColor.
 			mondrian nodes: aCollection.
 			mondrian layout grid.
 	] ].

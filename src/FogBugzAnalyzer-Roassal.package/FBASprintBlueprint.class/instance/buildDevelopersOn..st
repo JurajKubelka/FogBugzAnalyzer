@@ -1,7 +1,7 @@
 building
 buildDevelopersOn: anFBAActivity
 	| developers occasionalDevelopers newcommers regularDevelopers |
-	mondrian shape box color: Color transparent; borderColor: Color gray.
+	mondrian shape box color: Color transparent; borderColor: self borderColor.
 	developers := anFBAActivity developers.
 	developers ifEmpty: [ ^ self ].
 	mondrian node: developers forIt: [ 
