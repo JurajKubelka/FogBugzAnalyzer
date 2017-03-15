@@ -10,6 +10,7 @@ buildCases: aCollection title: titleString label: labelString
 			mondrian interaction 
 				highlightNeighbour: [ :case | self highlightElementsRelatedWithCase: case ] 
 				color: self neighbourColor.
+			mondrian interaction showEdge connectTo: [ :event | self highlightElementsRelatedWithCase: event ].
 			mondrian nodes: aCollection.
 			mondrian layout grid.
 	] ].

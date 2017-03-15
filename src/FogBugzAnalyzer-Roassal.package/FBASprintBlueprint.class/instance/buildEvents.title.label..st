@@ -10,6 +10,7 @@ buildEvents: aCollection title: titleString label: labelString
 			mondrian interaction 
 				highlightNeighbour: [ :event | self highlightElementsRelatedWithEvent: event ] 
 				color: self neighbourColor.
+			mondrian interaction showEdge connectTo: [ :event | self highlightElementsRelatedWithEvent: event ].
 			mondrian nodes: aCollection.
 			mondrian layout grid.
 	] ].

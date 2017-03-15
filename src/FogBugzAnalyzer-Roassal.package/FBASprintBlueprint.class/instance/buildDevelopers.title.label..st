@@ -11,6 +11,7 @@ buildDevelopers: aCollection title: titleString label: labelString
 				highlightNeighbour: [ :developer | self 
 					highlightElementsRelatedWithDeveloper: developer ] 
 				color: self neighbourColor.
+			mondrian interaction showEdge connectTo: [ :event | self highlightElementsRelatedWithDeveloper: event ].
 			mondrian nodes: aCollection.
 			mondrian layout grid.
 	] ].
