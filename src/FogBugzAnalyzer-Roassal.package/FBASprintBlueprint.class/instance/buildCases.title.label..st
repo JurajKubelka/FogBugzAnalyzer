@@ -8,7 +8,7 @@ buildCases: aCollection title: titleString label: labelString
 			mondrian node: labelString. 
 			mondrian shape box color: Color black.
 			mondrian interaction 
-				highlightElements: [ :case | self highlightElementsRelatedWithCase: case ] 
+				highlightNeighbour: [ :case | self highlightElementsRelatedWithCase: case ] 
 				color: self neighbourColor.
 			mondrian nodes: aCollection.
 			mondrian layout grid.

@@ -1,3 +1,7 @@
 highlighting
 highlightElementsRelatedWithCase: aFogBugzCase 
-	^ view elementsFromModels: ((OrderedCollection with: aFogBugzCase with: aFogBugzCase user) addAll: aFogBugzCase events; yourself)
+	^ OrderedCollection new 
+			add: aFogBugzCase; 
+			add: aFogBugzCase user;
+			addAll: aFogBugzCase events; 
+			yourself

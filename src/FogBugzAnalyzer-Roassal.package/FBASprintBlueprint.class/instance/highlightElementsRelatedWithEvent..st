@@ -1,3 +1,3 @@
 highlighting
 highlightElementsRelatedWithEvent: aFogBugzEvent 
-	^ view elementsFromModels: { aFogBugzEvent. aFogBugzEvent case. aFogBugzEvent user. }
+	^ { aFogBugzEvent. aFogBugzEvent case. aFogBugzEvent user. }.
