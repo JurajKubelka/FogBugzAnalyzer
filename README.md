@@ -170,6 +170,8 @@ specific Pharo Sprint days.
 
 ## Introduction Cases
 
+Introduction cases are created whenever a user sign-ups to the issue tracker.
+
 ### Number of Introduction Cases Per Day
 
 ![intro-cases-per-day.png](assets/img/intro-cases-per-day.png)
