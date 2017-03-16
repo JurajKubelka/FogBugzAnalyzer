@@ -6,7 +6,9 @@ buildCases: aCollection title: titleString label: labelString
 		mondrian node: aCollection forIt: [ 
 			mondrian shape label.
 			mondrian node: labelString. 
-			mondrian shape box color: Color black.
+			mondrian shape box 
+				color: self boxColor;
+				if: [ :case | case isIntroCase ] color: self introCaseColor.
 			mondrian interaction 
 				highlightNeighbors: [ :case | self highlightElementsRelatedWithCase: case ] 
 				color: self neighbourColor.

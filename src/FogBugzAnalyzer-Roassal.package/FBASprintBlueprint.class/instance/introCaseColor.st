@@ -1,0 +1,3 @@
+colors
+introCaseColor
+	^ Color veryLightGray

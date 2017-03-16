@@ -17,7 +17,7 @@ buildDevelopersOn: anFBAActivity
 		self buildDevelopers: occasionalParticipants title: 'occasional users' label: 'Occasional'.
 		newcommers := anFBAActivity newcommers.
 		newcommersParticipants := newcommers asParticipansIn: anFBAActivity.
-		self buildDevelopers: newcommers title: 'newcommers' label: 'Newcommers'.
+		self buildDevelopers: newcommersParticipants title: 'newcommers' label: 'Newcommers'.
 		mondrian layout horizontalLine.
 	].
 	^ view
