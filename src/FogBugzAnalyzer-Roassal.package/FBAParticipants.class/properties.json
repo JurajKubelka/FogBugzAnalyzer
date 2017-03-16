@@ -1,16 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "FBAOrderedCollection",
 	"category" : "FogBugzAnalyzer-Roassal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"activities",
-		"view",
-		"mondrian",
-		"participantShape"
-	],
-	"name" : "FBASprintBlueprint",
+	"instvars" : [ ],
+	"name" : "FBAParticipants",
 	"type" : "normal"
 }

@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "",
-	"super" : "FBAOrderedCollection",
+	"commentStamp" : "<historical>",
+	"super" : "PackageManifest",
 	"category" : "FogBugzAnalyzer",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "FBADevelopers",
+	"name" : "ManifestFogBugzAnalyzer",
 	"type" : "normal"
 }

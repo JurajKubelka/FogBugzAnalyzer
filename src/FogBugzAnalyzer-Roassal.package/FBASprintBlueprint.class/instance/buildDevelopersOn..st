@@ -1,18 +1,23 @@
 building
 buildDevelopersOn: anFBAActivity
-	| developers occasionalDevelopers newcommers regularDevelopers |
+	| users participants occasionalUsers occasionalParticipants regularUsers regularParticipants 
+	newcommers newcommersParticipants |
 	mondrian shape box color: Color transparent; borderColor: self borderColor.
-	developers := anFBAActivity developers.
-	developers ifEmpty: [ ^ self ].
-	mondrian node: developers forIt: [ 
-		regularDevelopers := self activities 
-				regularDevelopers: developers for: anFBAActivity.
-		self buildDevelopers: regularDevelopers title: 'regular developers' label: 'Regular'.
-		occasionalDevelopers := self activities 
-				occassionalDevelopers: developers for: anFBAActivity.
-		self buildDevelopers: occasionalDevelopers title: 'occasional developers' label: 'Occasional'.
+	users := anFBAActivity users.
+	users ifEmpty: [ ^ self ].
+	participants := users asParticipansIn: anFBAActivity.
+	mondrian node: participants forIt: [ 
+		regularUsers := self activities 
+				regularDevelopers: users for: anFBAActivity.
+		regularParticipants := regularUsers asParticipansIn: anFBAActivity.
+		self buildDevelopers: regularParticipants title: 'regular users' label: 'Regular'.
+		occasionalUsers := self activities 
+				occassionalDevelopers: users for: anFBAActivity.
+		occasionalParticipants := occasionalUsers asParticipansIn: anFBAActivity.
+		self buildDevelopers: occasionalParticipants title: 'occasional users' label: 'Occasional'.
 		newcommers := anFBAActivity newcommers.
+		newcommersParticipants := newcommers asParticipansIn: anFBAActivity.
 		self buildDevelopers: newcommers title: 'newcommers' label: 'Newcommers'.
-		mondrian layout verticalLine.
+		mondrian layout horizontalLine.
 	].
 	^ view

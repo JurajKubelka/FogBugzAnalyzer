@@ -2,17 +2,17 @@ printing
 printOverviewOn: aStream
 	| all |
 	aStream 
-		print: self developers size;
-		nextPutAll: ' developers were involved in the following ';
+		print: self users size;
+		nextPutAll: ' users were involved in the following ';
 		print: (all := self events size);
 		nextPutAll: ' activities:';
 		cr.
 	self printOverviewOfEvents: self events prefix: '' on: aStream.
 	aStream
 		cr;
-		nextPutAll: 'Developers: ';
+		nextPutAll: 'Users: ';
 		cr.
-	self developers do: [ :developer | 
-		self printOverviewOfDeveloper: developer on: aStream ].
+	self users do: [ :user | 
+		self printOverviewOfUser: user on: aStream ].
 	aStream cr; << 'Timezones:'; cr.
 	self printOverviewOfTimezones: self events prefix: '' on: aStream

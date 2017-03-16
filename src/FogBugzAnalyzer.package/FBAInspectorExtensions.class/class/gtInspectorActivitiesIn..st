@@ -18,9 +18,9 @@ gtInspectorActivitiesIn: composite
 			width: 50 tags: { } 
 			sortedBy: [ :a :b | a numberOfCases < b numberOfCases ];
 		column: 'Developers' 
-			evaluated: [ :event | event numberfOfDevelopers ]  
+			evaluated: [ :event | event numberfOfUsers ]  
 			width: 80 tags: { } 
-			sortedBy: [ :a :b | a numberfOfDevelopers < b numberfOfDevelopers ];
+			sortedBy: [ :a :b | a numberfOfUsers < b numberfOfUsers ];
 		column: 'Info' 
 			evaluated: [ :event | event info ]  
 			width: 50 tags: { } 

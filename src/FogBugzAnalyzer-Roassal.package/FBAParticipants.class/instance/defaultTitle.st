@@ -1,3 +1,3 @@
 accessing
 defaultTitle
-	^ 'items'
+	^ 'participants'

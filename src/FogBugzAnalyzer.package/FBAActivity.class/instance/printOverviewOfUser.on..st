@@ -1,7 +1,7 @@
 printing
-printOverviewOfDeveloper: developer on: aStream
+printOverviewOfUser: developer on: aStream
 	| developerEvents |
-	developerEvents := self developerEvents: developer.
+	developerEvents := self eventsOfUser: developer.
 	aStream 
 		nextPutAll: ' - '; 
 		nextPutAll: developer username;

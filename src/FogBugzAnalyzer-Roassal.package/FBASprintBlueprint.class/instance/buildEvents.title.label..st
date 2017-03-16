@@ -6,7 +6,9 @@ buildEvents: aCollection title: titleString label: labelString
 		mondrian node: aCollection forIt: [ 
 			mondrian shape label.
 			mondrian node: labelString. 
-			mondrian shape box color: Color black.
+			mondrian shape box 
+				color: Color black;
+				if: [ :event | event description isEmpty ] color: Color red.
 			mondrian interaction 
 				highlightNeighbors: [ :event | self highlightElementsRelatedWithEvent: event ] 
 				color: self neighbourColor.

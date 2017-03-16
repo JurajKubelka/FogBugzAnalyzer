@@ -1,0 +1,3 @@
+adding - datasets
+addUserEventsPerActivityWithoutTimeline
+	^ self addEventsPerUserInBoxPlot

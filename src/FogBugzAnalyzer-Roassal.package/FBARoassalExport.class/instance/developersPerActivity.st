@@ -6,7 +6,7 @@ developersPerActivity
 			addImportantDates;
 			addImportantDatesOnAxisX;
 			timelineDataSelector: #newTimelineDataConnectedDotShapeColored:;
-			addActiveDevelopers;
+			addActiveUsers;
 			addLegend;
 			configureAxisXAndY: 'Number of Developers per Activity';
 			build.

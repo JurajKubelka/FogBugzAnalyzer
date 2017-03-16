@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "FBAOrderedCollection",
+	"category" : "FogBugzAnalyzer",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "FBAUsers",
+	"type" : "normal"
+}

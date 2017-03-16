@@ -1,10 +1,10 @@
 adding - datasets
-addDeveloperEventsBoxPlot
+addEventsPerUserInBoxPlot
 	^ activities collect: [ :activity | | data developers events |
 		data := self newBoxPlotDataSet.
-		developers := activity developers.
+		developers := activity users.
 		events := developers collect: [ :developer | 
-			(activity developerEvents: developer) size / activity days ].
+			(activity eventsOfUser: developer) size / activity days ].
 		data points: events.
 		data model: activity.
 		data boxShape 

@@ -1,16 +1,14 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "JurajKubelka 3/16/2017 11:09",
 	"super" : "Object",
 	"category" : "FogBugzAnalyzer-Roassal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"activities",
-		"view",
-		"mondrian",
-		"participantShape"
+		"activity",
+		"user"
 	],
-	"name" : "FBASprintBlueprint",
+	"name" : "FBAParticipant",
 	"type" : "normal"
 }

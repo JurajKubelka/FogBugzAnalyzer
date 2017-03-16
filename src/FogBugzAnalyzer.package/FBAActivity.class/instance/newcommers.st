@@ -1,3 +1,3 @@
-accessing - developers
+accessing - users
 newcommers
-	^ self introCases developers 
+	^ self introCases users 
