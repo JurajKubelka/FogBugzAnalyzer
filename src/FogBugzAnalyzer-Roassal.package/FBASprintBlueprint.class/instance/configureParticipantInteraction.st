@@ -2,7 +2,7 @@ configuration - interactions
 configureParticipantInteraction
 	mondrian interaction 
 		highlightNeighbors: [ :developer | self 
-			highlightElementsRelatedWithParticipant: developer ] 
+			highlightInfoRelatedWithParticipant: developer ] 
 		color: self neighbourColor.
 	mondrian interaction showEdge 
-		connectTo: [ :event | self highlightElementsRelatedWithParticipant: event ].
+		connectTo: [ :event | self showEdgesRelatedWithParticipant: event ].

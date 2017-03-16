@@ -1,5 +1,5 @@
 highlighting
-highlightElementsRelatedWithParticipant: aFBAParticipant 
+highlightInfoRelatedWithParticipant: aFBAParticipant 
 	| set |
 	set := Set new.
 	set add: aFBAParticipant.
@@ -7,5 +7,7 @@ highlightElementsRelatedWithParticipant: aFBAParticipant
 		(element model class = FogBugzCase and: [
 			element model includesEventOfUser: aFBAParticipant user ]) 
 				ifTrue: [ set add: element model ].
+		(element model class = FogBugzEvent and: [ 
+			element model user = aFBAParticipant user ]) ifTrue: [ set add: element model ].
 	].
 	^ set
