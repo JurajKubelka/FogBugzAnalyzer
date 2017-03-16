@@ -222,7 +222,12 @@ Introduction cases are created whenever a user sign-ups to the issue tracker.
 
 ## Blueprint
 
+Here we display a blueprint for each Pharo Sprint and Release.
+
 ![sprint-release-blueprint.png](assets/img/sprint-release-blueprint.png)
+
+![sprint-release-blueprint-legend.png](assets/img/sprint-release-blueprint-legend.png)
+
 
 ```
 (FBASprintBlueprint activities: client activitiesWithUserEventsOfRealCases)
