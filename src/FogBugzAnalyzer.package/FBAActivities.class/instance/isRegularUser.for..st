@@ -1,5 +1,5 @@
 testing
-isRegularDeveloper: aFogBugzUser for: aFBAActivity 
+isRegularUser: aFogBugzUser for: aFBAActivity 
 	| numberOfEvents numberOfDays |
 	numberOfEvents := 0.
 	numberOfDays := 0.
