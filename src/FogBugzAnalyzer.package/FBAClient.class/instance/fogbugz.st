@@ -1,3 +1,3 @@
 accessing
 fogbugz
-	^ fogbugz ifNil: [ fogbugz := GCFogBugz new ]
+	^ fogbugz ifNil: [ fogbugz := FogBugzClient new ]
